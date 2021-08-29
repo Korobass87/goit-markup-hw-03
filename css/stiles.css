@@ -43,6 +43,9 @@ ul {
 *::after {
   box-sizing: border-box;
 }
+img {
+  display: block;
+}
 
 .conteiner {
   width: 1200px;
@@ -129,6 +132,7 @@ ul {
 
 .section {
   padding-bottom: 94px;
+  padding-top: 94px;
   width: 1600px;
   margin-left: auto;
   margin-right: auto;
@@ -191,15 +195,16 @@ ul {
   margin: -1px;
   border: 0;
   padding: 0;
-  
+
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-}
-.advantages .section {
-    padding-top: 94px;
+
+.advantages {
+  padding-bottom: 0px;
+  display: block;
 }
 
 .advantages-list {
@@ -270,15 +275,20 @@ ul {
   padding-top: 94px;
 }
 
-.team-name {
-  margin-top: 30px;
-}
-
 .team-post {
   margin-top: 10px;
-  margin-bottom: 30px;
 }
+
 .team-item {
+  width: 270px;
+}
+
+.team-card {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+
   background: #ffffff;
 
   text-align: center;
@@ -415,3 +425,7 @@ ul {
 .project-item-text h3 {
   margin-bottom: 4px;
 }
+
+/* .advantages .section {
+    padding-top: 94px;
+} */
